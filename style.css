@@ -150,11 +150,16 @@ section {
     padding: 80px 8%;
 }
 
+/* Add spacing under big headers */
+.contact-section h1 {
+    margin-bottom: 25px;
+}
+
 .contact-grid {
     display: grid;
     grid-template-columns: 1.2fr 1.3fr;
     gap: 50px;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 /* Left Panel (Shelter Info) */
@@ -163,12 +168,22 @@ section {
     line-height: 1.75;
 }
 
-.contact-info h2 { margin-bottom: 15px; }
-.contact-info h3 { margin-top: 22px; margin-bottom: 6px; }
+.contact-info h2 {
+    margin-bottom: 25px;
+}
 
-/* Right Panel (Form) */
+.contact-info h3 {
+    margin-top: 22px;
+    margin-bottom: 10px;
+}
+
+/* Right Panel (Form Area) */
 .contact-form {
     padding: 25px 30px;
+}
+
+.contact-form h2 {
+    margin-bottom: 20px;
 }
 
 .contact-form form {
@@ -177,16 +192,32 @@ section {
     gap: 15px;
 }
 
+/* Name + Email */
 .contact-form input[type="text"],
 .contact-form input[type="email"] {
     width: 48%;
 }
 
-#subject { width: 100%; }
-.contact-form textarea { width: 100%; margin-top: 10px; }
+/* Subject full width */
+#subject {
+    width: 100%;
+}
 
-/* Volunteer info under form */
-.contact-form > div { margin-top: 35px; }
+/* Message full width */
+.contact-form textarea {
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* Volunteer section */
+.contact-form > div h2 {
+    margin-top: 45px;
+    margin-bottom: 18px;
+}
+
+.contact-form > div {
+    margin-top: 35px;
+}
 
 /* ───────────────────────── BUTTONS ───────────────────────── */
 .btn {
