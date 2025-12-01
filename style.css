@@ -16,7 +16,7 @@ main {
     min-height: 70vh;
 }
 
-/* ─────────────────────── NAVBAR ─────────────────────── */
+/* ───────────────────────── NAVBAR ───────────────────────── */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -74,14 +74,14 @@ main {
 
 .navbar ul li a:hover {
     opacity: 0.9;
-    border-bottom-color: rgba(255, 255, 255, 0.9);
+    border-bottom-color: rgba(255,255,255,0.9);
 }
 
 .navbar ul li a.active {
     border-bottom-color: #fff;
 }
 
-/* ─────────────────────── SECTIONS ─────────────────────── */
+/* ───────────────────────── SECTION SPACING ───────────────────────── */
 section {
     padding: 60px 5%;
 }
@@ -89,10 +89,25 @@ section {
 /* HOME PAGE */
 .home-section h1 {
     font-size: 36px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
-/* BOXES (ABOUT / PET CARDS / CONTACT PANELS) */
+.home-section > p {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+/* Homepage Banner Image */
+.banner-image {
+    width: 100%;
+    max-height: 350px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin: 25px 0;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.18);
+}
+
+/* Shared Boxes (About / Pet Cards / Contact Panels) */
 .about-container,
 .pet-card,
 .contact-info,
@@ -103,7 +118,7 @@ section {
     padding: 20px;
 }
 
-/* ─────────────────────── SERVICES TEXT ─────────────────────── */
+/* Services */
 .services h3 {
     margin-top: 15px;
     margin-bottom: 5px;
@@ -114,14 +129,14 @@ section {
     line-height: 1.6;
 }
 
-/* ─────────────────────── ADOPT PAGE ─────────────────────── */
+/* ───────────────────────── ADOPT PAGE ───────────────────────── */
 .pets-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 20px;
 }
 
-/* MAKE ALL IMAGES UNIFORM */
+/* Uniform pet image size */
 .pet-image {
     width: 100%;
     height: 250px;
@@ -130,33 +145,28 @@ section {
     margin-bottom: 10px;
 }
 
-/* ─────────────────────── CONTACT PAGE (SPACING FIX) ─────────────────────── */
+/* ───────────────────────── CONTACT PAGE ───────────────────────── */
 .contact-section {
-    padding: 80px 8%; /* more space globally */
+    padding: 80px 8%;
 }
 
 .contact-grid {
     display: grid;
     grid-template-columns: 1.2fr 1.3fr;
-    gap: 50px;          /* spread columns apart */
-    margin-top: 30px;   /* space below header */
+    gap: 50px;
+    margin-top: 30px;
 }
 
+/* Left Panel (Shelter Info) */
 .contact-info {
     padding: 25px 30px;
-    line-height: 1.75; /* relaxed text breathing */
+    line-height: 1.75;
 }
 
-.contact-info h2 {
-    margin-bottom: 15px;
-}
+.contact-info h2 { margin-bottom: 15px; }
+.contact-info h3 { margin-top: 22px; margin-bottom: 6px; }
 
-.contact-info h3 {
-    margin-top: 22px;
-    margin-bottom: 6px;
-}
-
-/* CONTACT FORM */
+/* Right Panel (Form) */
 .contact-form {
     padding: 25px 30px;
 }
@@ -164,34 +174,22 @@ section {
 .contact-form form {
     display: flex;
     flex-wrap: wrap;
-    gap: 15px; /* spacing between fields */
+    gap: 15px;
 }
 
-/* 1st row — Name + Email side by side */
 .contact-form input[type="text"],
 .contact-form input[type="email"] {
-    width: 48%; /* balanced width */
+    width: 48%;
 }
 
-/* Subject full width */
-#subject {
-    width: 100%;
-}
+#subject { width: 100%; }
+.contact-form textarea { width: 100%; margin-top: 10px; }
 
-/* Message box full width */
-.contact-form textarea {
-    width: 100%;
-    margin-top: 10px;
-}
+/* Volunteer info under form */
+.contact-form > div { margin-top: 35px; }
 
-/* Volunteer box spacing below form */
-.contact-form > div {
-    margin-top: 35px;
-}
-
-/* ─────────────────────── BUTTONS ─────────────────────── */
+/* ───────────────────────── BUTTONS ───────────────────────── */
 .btn {
-    margin-top: 8px;
     padding: 8px 14px;
     border-radius: 20px;
     border: none;
@@ -208,7 +206,7 @@ section {
     box-shadow: 0 3px 8px rgba(0,0,0,0.25);
 }
 
-/* ─────────────────────── FOOTER ─────────────────────── */
+/* ───────────────────────── FOOTER ───────────────────────── */
 footer {
     background: #A86931;
     text-align: center;
@@ -217,8 +215,9 @@ footer {
     margin-top: 40px;
 }
 
-/* ─────────────────────── RESPONSIVE (MOBILE) ─────────────────────── */
+/* ───────────────────────── RESPONSIVE ───────────────────────── */
 @media (max-width: 800px) {
+    
     .navbar {
         flex-direction: column;
         align-items: flex-start;
@@ -231,6 +230,6 @@ footer {
 
     .contact-form input[type="text"],
     .contact-form input[type="email"] {
-        width: 100%; /* stack on mobile */
+        width: 100%;
     }
 }
