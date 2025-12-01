@@ -6,7 +6,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Background replaced */
+/* BACKGROUND + GLOBAL */
 body {
     background: #F6D16B;
     color: #333;
@@ -16,13 +16,13 @@ main {
     min-height: 70vh;
 }
 
-/* NAVBAR */
+/* NAVBAR ---------------------------*/
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 5%;
-    background: #A86931; /* new color */
+    background: #A86931;
     color: white;
     position: sticky;
     top: 0;
@@ -41,7 +41,7 @@ main {
     height: 55px;
     border-radius: 8px;
     object-fit: cover;
-    background: #F6D16B; /* now matches theme */
+    background: #F6D16B;
 }
 
 .logo-area h2 {
@@ -56,7 +56,7 @@ main {
     display: block;
 }
 
-/* NAV LINKS */
+/* NAVIGATION LINKS */
 .navbar ul {
     list-style: none;
     display: flex;
@@ -81,29 +81,29 @@ main {
     border-bottom-color: #fff;
 }
 
-/* SECTIONS */
+/* GENERAL PAGE SECTION SPACING */
 section {
     padding: 60px 5%;
 }
 
-/* HOME PAGE */
+/* HOME PAGE ---------------------------*/
 .home-section h1 {
     font-size: 36px;
     margin-bottom: 10px;
 }
 
-/* Boxes changed from white → slightly darker gold for contrast */
+/* BOXED CONTENT STYLING */
 .about-container,
 .pet-card,
 .contact-info,
 .contact-form form {
-    background: #F8DD8D;  /* golden shade for depth */
+    background: #F8DD8D;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.15);
     padding: 20px;
 }
 
-/* SERVICE TEXT */
+/* SERVICES LIST */
 .services h3 {
     margin-top: 15px;
     margin-bottom: 5px;
@@ -114,18 +114,23 @@ section {
     line-height: 1.6;
 }
 
-/* ADOPT PAGE */
+/* 🔥 ADOPT PAGE IMAGE GRID ---------------------------*/
 .pets-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 20px;
 }
 
-.pet-image.placeholder {
-    background: #dba057; /* warm placeholder instead of cool tones */
+/* 🐾 MAKE ALL PET IMAGES THE SAME SIZE */
+.pet-image {
+    width: 100%;
+    height: 250px;         /* uniform card height */
+    object-fit: cover;      /* no distortion */
+    border-radius: 10px;
+    margin-bottom: 10px;
 }
 
-/* CONTACT PAGE */
+/* CONTACT PAGE ---------------------------*/
 .contact-grid {
     display: grid;
     grid-template-columns: 1.1fr 1.4fr;
@@ -140,14 +145,14 @@ section {
     background: #ffefb4;
 }
 
-/* BUTTONS */
+/* BUTTONS ---------------------------*/
 .btn {
     margin-top: 8px;
     padding: 8px 14px;
     border-radius: 20px;
     border: none;
     cursor: pointer;
-    background: #A86931; /* new theme */
+    background: #A86931;
     color: white;
     font-weight: bold;
     font-size: 14px;
@@ -159,7 +164,7 @@ section {
     box-shadow: 0 3px 8px rgba(0,0,0,0.25);
 }
 
-/* FOOTER */
+/* FOOTER ---------------------------*/
 footer {
     background: #A86931;
     text-align: center;
@@ -168,7 +173,7 @@ footer {
     margin-top: 40px;
 }
 
-/* RESPONSIVE */
+/* RESPONSIVE DESIGN ---------------------------*/
 @media (max-width: 800px) {
     .navbar {
         flex-direction: column;
