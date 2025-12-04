@@ -89,7 +89,7 @@ section {
 /* HOME PAGE */
 .home-section h1 {
     font-size: 36px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 .home-section > p {
@@ -150,11 +150,12 @@ section {
     padding: 80px 8%;
 }
 
-/* Add spacing under big headers */
+/* Header spacing */
 .contact-section h1 {
     margin-bottom: 25px;
 }
 
+/* GRID LAYOUT */
 .contact-grid {
     display: grid;
     grid-template-columns: 1.2fr 1.3fr;
@@ -162,7 +163,7 @@ section {
     margin-top: 20px;
 }
 
-/* Left Panel (Shelter Info) */
+/* Left Panel */
 .contact-info {
     padding: 25px 30px;
     line-height: 1.75;
@@ -174,10 +175,29 @@ section {
 
 .contact-info h3 {
     margin-top: 22px;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 }
 
-/* Right Panel (Form Area) */
+/* HOURS TABLE */
+.hours-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.hours-table th,
+.hours-table td {
+    padding: 8px 10px;
+    text-align: left;
+    border-bottom: 1px solid rgba(0,0,0,0.15);
+}
+
+.hours-table th {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+/* RIGHT PANEL (FORM) */
 .contact-form {
     padding: 25px 30px;
 }
@@ -192,24 +212,21 @@ section {
     gap: 15px;
 }
 
-/* Name + Email */
 .contact-form input[type="text"],
 .contact-form input[type="email"] {
     width: 48%;
 }
 
-/* Subject full width */
 #subject {
     width: 100%;
 }
 
-/* Message full width */
 .contact-form textarea {
     width: 100%;
     margin-top: 10px;
 }
 
-/* Volunteer section */
+/* Volunteer section under form */
 .contact-form > div h2 {
     margin-top: 45px;
     margin-bottom: 18px;
@@ -248,7 +265,7 @@ footer {
 
 /* ───────────────────────── RESPONSIVE ───────────────────────── */
 @media (max-width: 800px) {
-    
+
     .navbar {
         flex-direction: column;
         align-items: flex-start;
