@@ -29,6 +29,7 @@
 
     <main>
         <section class="contact-section">
+
             <h1>Contact Loved Pets Animal Shelter</h1>
             <p>
                 Have questions about adoption, volunteering, or our animals? Reach out using the information below,
@@ -36,55 +37,58 @@
             </p>
 
             <div class="contact-grid">
-                <!-- Contact Info -->
+
+                <!-- LEFT SIDE: Shelter Info -->
                 <div class="contact-info">
                     <h2>Shelter Information</h2>
+
                     <p><strong>Business Name:</strong> Loved Pets Animal Shelter</p>
-                    <p>
-                        <strong>Address:</strong> 6645 Watergrass Cir., Springfield, Arizona 11645
-                    </p>
+                    <p><strong>Address:</strong> 6645 Watergrass Cir., Springfield, Arizona 11645</p>
                     <p><strong>Phone:</strong> (555) 476-2984</p>
-                    <p>
-                        <strong>General Contact Email:</strong>
-                        <a href="mailto:josie@welovepets.com">josie@welovepets.com</a>
-                    </p>
+                    <p><strong>Email:</strong> <a href="mailto:josie@welovepets.com">josie@welovepets.com</a></p>
 
-                    <h3 style="margin-top: 15px;">Hours of Operation</h3>
-                    <p>Monday: 8am – 5pm</p>
-                    <p>Tuesday: 8am – 5pm</p>
-                    <p>Wednesday: 8am – 8pm</p>
-                    <p>Thursday: 8am – 5pm</p>
-                    <p>Friday: 8am – 12pm</p>
-                    <p>Saturday: 8am – 12pm</p>
-                    <p>Sunday: Closed</p>
+                    <h3>Hours of Operation</h3>
 
-                    <h3 style="margin-top: 15px;">Volunteer Contact</h3>
-                    <p>
-                        <strong>Volunteer Email:</strong>
-                        <a href="mailto:volunteer@welovepets.com">volunteer@welovepets.com</a>
-                    </p>
+                    <!-- HOURS TABLE -->
+                    <table class="hours-table">
+                        <tr>
+                            <th>Day</th>
+                            <th>Hours</th>
+                        </tr>
+                        <tr><td>Monday</td><td>8am – 5pm</td></tr>
+                        <tr><td>Tuesday</td><td>8am – 5pm</td></tr>
+                        <tr><td>Wednesday</td><td>8am – 8pm</td></tr>
+                        <tr><td>Thursday</td><td>8am – 5pm</td></tr>
+                        <tr><td>Friday</td><td>8am – 12pm</td></tr>
+                        <tr><td>Saturday</td><td>8am – 12pm</td></tr>
+                        <tr><td>Sunday</td><td>Closed</td></tr>
+                    </table>
+
+                    <h3>Volunteer Contact</h3>
+                    <p><strong>Email:</strong> <a href="mailto:volunteer@welovepets.com">volunteer@welovepets.com</a></p>
                 </div>
 
-                <!-- Contact / Volunteer Form -->
+                <!-- RIGHT SIDE: Contact Form -->
                 <div class="contact-form">
                     <h2>Send Us a Message</h2>
+
                     <form action="#" method="post">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" required>
+                        <label>Name</label>
+                        <input type="text" name="name" required>
 
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required>
+                        <label>Email</label>
+                        <input type="email" name="email" required>
 
-                        <label for="subject">Subject</label>
+                        <label>Subject</label>
                         <input type="text" id="subject" name="subject" placeholder="Adoption, Volunteering, etc.">
 
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
+                        <label>Message</label>
+                        <textarea name="message" rows="6" required></textarea>
 
                         <button type="submit" class="btn">Submit</button>
                     </form>
 
-                    <div style="margin-top: 20px;">
+                    <div>
                         <h2>How to Become a Volunteer</h2>
                         <ol>
                             <li>Complete the online application.</li>
@@ -94,6 +98,7 @@
                         </ol>
                     </div>
                 </div>
+
             </div>
         </section>
     </main>
