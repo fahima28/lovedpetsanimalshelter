@@ -16,6 +16,17 @@ main {
     min-height: 70vh;
 }
 
+/* ───────────────────────── DOG PAW (TOP RIGHT) ───────────────────────── */
+.dogpaw {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 85px;
+    opacity: 0.9;
+    z-index: 999;
+    pointer-events: none; /* allows clicking navbar under it */
+}
+
 /* ───────────────────────── NAVBAR ───────────────────────── */
 .navbar {
     display: flex;
@@ -279,5 +290,9 @@ footer {
     .contact-form input[type="text"],
     .contact-form input[type="email"] {
         width: 100%;
+    }
+
+    .dogpaw {
+        width: 65px;
     }
 }
