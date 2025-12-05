@@ -19,12 +19,12 @@ main {
 /* ───────────────────────── DOG PAW (TOP RIGHT) ───────────────────────── */
 .dogpaw {
     position: fixed;
-    top: 10px;
+    top: 110px;      /* moved down */
     right: 10px;
-    width: 85px;
+    width: 120px;    /* increased size */
     opacity: 0.9;
     z-index: 999;
-    pointer-events: none; /* allows clicking navbar under it */
+    pointer-events: none;
 }
 
 /* ───────────────────────── NAVBAR ───────────────────────── */
@@ -293,6 +293,6 @@ footer {
     }
 
     .dogpaw {
-        width: 65px;
+        width: 90px; /* scale down on mobile */
     }
 }
