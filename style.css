@@ -19,9 +19,9 @@ main {
 /* ───────────────────────── DOG PAW (TOP RIGHT) ───────────────────────── */
 .dogpaw {
     position: fixed;
-    top: 110px;      /* moved down */
+    top: 110px;      /* lowered */
     right: 10px;
-    width: 120px;    /* increased size */
+    width: 120px;    /* bigger */
     opacity: 0.9;
     z-index: 999;
     pointer-events: none;
@@ -118,7 +118,7 @@ section {
     box-shadow: 0 4px 12px rgba(0,0,0,0.18);
 }
 
-/* Shared Boxes (About / Pet Cards / Contact Panels) */
+/* Shared Boxes — About Us, Volunteers, etc. */
 .about-container,
 .pet-card,
 .contact-info,
@@ -127,6 +127,7 @@ section {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.15);
     padding: 20px;
+    margin-bottom: 30px;   /* extra spacing below each box */
 }
 
 /* Services */
@@ -161,7 +162,6 @@ section {
     padding: 80px 8%;
 }
 
-/* Header spacing */
 .contact-section h1 {
     margin-bottom: 25px;
 }
@@ -174,7 +174,7 @@ section {
     margin-top: 20px;
 }
 
-/* Left Panel */
+/* LEFT PANEL */
 .contact-info {
     padding: 25px 30px;
     line-height: 1.75;
@@ -201,6 +201,13 @@ section {
     padding: 8px 10px;
     text-align: left;
     border-bottom: 1px solid rgba(0,0,0,0.15);
+}
+
+/* vertical column separator (new) */
+.hours-table td:first-child,
+.hours-table th:first-child {
+    border-right: 2px solid rgba(0,0,0,0.25);
+    padding-right: 15px;
 }
 
 .hours-table th {
@@ -237,7 +244,7 @@ section {
     margin-top: 10px;
 }
 
-/* Volunteer section under form */
+/* Volunteer section */
 .contact-form > div h2 {
     margin-top: 45px;
     margin-bottom: 18px;
