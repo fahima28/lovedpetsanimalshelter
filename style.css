@@ -19,9 +19,9 @@ main {
 /* ───────────────────────── DOG PAW (TOP RIGHT) ───────────────────────── */
 .dogpaw {
     position: fixed;
-    top: 110px;      /* lowered */
+    top: 110px;
     right: 10px;
-    width: 120px;    /* bigger */
+    width: 120px;
     opacity: 0.9;
     z-index: 999;
     pointer-events: none;
@@ -118,7 +118,7 @@ section {
     box-shadow: 0 4px 12px rgba(0,0,0,0.18);
 }
 
-/* Shared Boxes — About Us, Volunteers, etc. */
+/* Shared Boxes */
 .about-container,
 .pet-card,
 .contact-info,
@@ -203,7 +203,7 @@ section {
     border-bottom: 1px solid rgba(0,0,0,0.15);
 }
 
-/* Vertical separator line */
+/* Vertical separator */
 .hours-table td:first-child,
 .hours-table th:first-child {
     border-right: 2px solid rgba(0,0,0,0.25);
@@ -215,7 +215,7 @@ section {
     font-weight: bold;
 }
 
-/* RIGHT PANEL (FORM) */
+/* RIGHT PANEL FORM */
 .contact-form {
     padding: 25px 30px;
 }
@@ -244,7 +244,7 @@ section {
     margin-top: 10px;
 }
 
-/* Volunteer section */
+/* Volunteer Section */
 .contact-form > div h2 {
     margin-top: 45px;
     margin-bottom: 18px;
@@ -279,16 +279,20 @@ footer {
     padding: 12px;
     color: white;
     margin-top: 40px;
-    position: relative; /* allows absolute-positioned validation icon */
+    position: relative;
 }
 
-/* Validation icon in bottom-right */
+/* ───────────────────────── SMALL VALIDATION ICON ───────────────────────── */
 .validation-icon {
-    position: absolute;
-    right: 15px;
-    bottom: 8px;
-    width: 55px;
-    opacity: 0.95;
+    position: absolute !important;
+    right: 10px !important;
+    bottom: 6px !important;
+    width: 55px !important;
+    height: auto !important;
+    max-width: 55px !important;
+    max-height: 55px !important;
+    object-fit: contain !important;
+    z-index: 10;
 }
 
 /* ───────────────────────── RESPONSIVE ───────────────────────── */
