@@ -127,7 +127,7 @@ section {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.15);
     padding: 20px;
-    margin-bottom: 30px;   /* extra spacing below each box */
+    margin-bottom: 30px;
 }
 
 /* Services */
@@ -203,7 +203,7 @@ section {
     border-bottom: 1px solid rgba(0,0,0,0.15);
 }
 
-/* vertical column separator (new) */
+/* Vertical separator line */
 .hours-table td:first-child,
 .hours-table th:first-child {
     border-right: 2px solid rgba(0,0,0,0.25);
@@ -279,6 +279,16 @@ footer {
     padding: 12px;
     color: white;
     margin-top: 40px;
+    position: relative; /* allows absolute-positioned validation icon */
+}
+
+/* Validation icon in bottom-right */
+.validation-icon {
+    position: absolute;
+    right: 15px;
+    bottom: 8px;
+    width: 55px;
+    opacity: 0.95;
 }
 
 /* ───────────────────────── RESPONSIVE ───────────────────────── */
@@ -300,6 +310,6 @@ footer {
     }
 
     .dogpaw {
-        width: 90px; /* scale down on mobile */
+        width: 90px;
     }
 }
