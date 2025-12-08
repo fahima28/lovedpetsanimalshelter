@@ -282,15 +282,15 @@ footer {
     position: relative;
 }
 
-/* ───────────────────────── SMALL VALIDATION ICON ───────────────────────── */
+/* ───────────────────────── VALIDATION ICON (1.5× SIZE) ───────────────────────── */
 .validation-icon {
     position: absolute !important;
     right: 10px !important;
     bottom: 6px !important;
-    width: 55px !important;
+    width: 83px !important;     /* 1.5× size */
     height: auto !important;
-    max-width: 55px !important;
-    max-height: 55px !important;
+    max-width: 83px !important;
+    max-height: 83px !important;
     object-fit: contain !important;
     z-index: 10;
 }
